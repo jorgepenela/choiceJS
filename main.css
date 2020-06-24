@@ -1,0 +1,88 @@
+:root{
+	--verde: green;
+	--rojo: red;
+}
+audio{
+	display: none;
+}
+body{
+	background: #333;
+	color: #fff;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 100px;
+	
+}
+body.fail{
+	transition: all 0.5s;
+	background: #fff;
+
+}
+button{
+	font-size: 20px;
+	margin: 20px;
+	padding: 15px;
+}
+.home{
+	background: indigo;
+	padding: 30px;
+}
+.juego{
+	display: none;
+	padding: 30px;
+	background: #000;
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.score{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.barratiempo{
+	/*transition: all 1s linear;*/
+	width: 100%;
+	height: 10px;
+	background: springGreen;
+}
+.acierto{
+	background: var(--verde);
+	color: #fff;
+}
+.error{
+	background: var(--rojo);
+	color: #fff;
+}
+.vidas{
+	position: absolute;
+	top: 0px;
+	left: 15px;
+}
+.vidas span{
+	color: tomato;
+	font-size: 20px;
+}
+.mensaje{
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: all 1s;
+	opacity: 0;
+	z-index: -1;
+	background: #000;
+	width: 100%;		
+}
+.mensaje img{
+	height: 200px;
+}
+.mensaje.abrir{
+	opacity: 0.5;
+	z-index: 9;
+}
+@media screen and (max-width: 500px){
+	body{
+		padding: 15px;
+	}
+}

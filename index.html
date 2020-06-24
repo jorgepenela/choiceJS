@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Choice</title>
+
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div class="home">
+			<h1>Choice</h1>
+			<p>
+				Respondé antes que se acabe el tiempo! <br>
+				No pierdas las vidas!
+			</p>
+			<button onclick="aJugar()">Jugar!</button>
+			<p>por jorge :D</p>
+		</div>
+		<div class="juego">
+			
+			<div class="vidas">
+				<span>♥</span>
+				<span>♥</span>
+				<span>♥</span>
+			</div>
+			
+			<h3 id="qs"></h3>
+
+			<button id="uno" value="1" class="opciones"></button>
+			<button id="dos" value="2" class="opciones"></button>
+			<button id="tres" value="3" class="opciones"></button>
+			<div id="mute">[Mute]</div>
+			<br>
+			<div class="score">Score: <span></span></div>
+			<div class="temporizador"><span></span></div>
+			<div class="barratiempo"></div>
+
+			<div class="mensaje">
+				<h3>PERDEDOOOR :(</h3>
+				<img src="img/perdedor.gif" >
+				<p class="puntajeFinal">Puntaje: <span></span></p>
+				<button onclick="window.location.reload()">OTRA VEZ</button>
+			</div>
+		</div><!-- /.juego -->
+
+		<audio src="music/acierto.mp3" preload="auto" id="s-acierto"></audio>
+		<audio src="music/error.mp3" preload="auto" id="s-error"></audio>
+		<audio src="music/fondo.mp3" preload="auto" autoplay loop playisinline id="s-fondo"></audio>
+		
+		
+		<script src="p.js"></script>
+		<script src="main.js?v=0"></script>
+	</body>
+</html>
